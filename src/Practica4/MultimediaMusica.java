@@ -16,7 +16,7 @@ public class MultimediaMusica extends Multimedia implements Serializable {
     // Metodos
     public void mostrarDatos(){
         super.mostrarDatos();
-        System.out.printf("El formato es %d ",formato);
+        System.out.printf("El formato es %s ",formato);
         System.out.printf("La duración es %s ",duracion);
         System.out.printf("La diponibilidad de directo es %b \n",directo);
     }

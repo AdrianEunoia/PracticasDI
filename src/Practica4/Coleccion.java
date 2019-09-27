@@ -46,11 +46,27 @@ public class Coleccion {
         }
     }
     // Listar
-    public void listarDatos(){
+    public void listarDatos(String opcionListado){
         Enumeration<Multimedia> listarRegistros = registroMultimedia.elements();
         while (listarRegistros.hasMoreElements()){
             Multimedia multimediaListado = listarRegistros.nextElement();
-            multimediaListado.mostrarDatos();
+            switch (opcionListado){
+                case "libro":
+                    if(multimediaListado instanceof MultimediaLibro);{
+                    multimediaListado.mostrarDatos();
+                    }
+                    break;
+                case "musica":
+                    if(multimediaListado instanceof MultimediaMusica);{
+                        multimediaListado.mostrarDatos();
+                     }
+                break;
+                case "pelicula":
+                if(multimediaListado instanceof MultimediaPelicula);{
+                    multimediaListado.mostrarDatos();
+                }
+                break;
+            }
         }
     }
     // Exportar lista

@@ -112,13 +112,13 @@ public class EntradaMultimedia {
                     opcionListar = scanner.next();
                     if(opcionListar.equals("libro")){
                         System.out.println("Vamos a listar libros");
-                        registroMultimedia.listarDatos();
+                        registroMultimedia.listarDatos(opcionListar);
                     }else if(opcionListar.equals("musica")){
                         System.out.println("Vamos a listar canciones");
-                        registroMultimedia.listarDatos();
+                        registroMultimedia.listarDatos(opcionListar);
                     }else if(opcionListar.equals("pelicula")){
                         System.out.println("Vamos a listar peliculas");
-                        registroMultimedia.listarDatos();
+                        registroMultimedia.listarDatos(opcionListar);
                     }
                     break;
                 case 4:
