@@ -122,9 +122,11 @@ public class EntradaMultimedia {
                     }
                     break;
                 case 4:
+                    System.out.println("Vamos a importar los datos de un fichero");
                     registroMultimedia.importarFichero();
                     break;
                 case 5:
+                    System.out.println("Vamos a exportar los datos a un fichero");
                     registroMultimedia.extraerFichero();
                     break;
                 case 6:
